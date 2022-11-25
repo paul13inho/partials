@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Floating Action Menu</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+    <div class="navigation active">
+        <div class="toggle"></div>
+        <ul>
+            <li>
+                <a href="#">
+                <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
+                <span class="title">Home</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
+                <span class="title">Profile</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                <span class="icon"><ion-icon name="chatbubbles-outline"></ion-icon></span>
+                <span class="title">Messages</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                <span class="icon"><ion-icon name="settings-outline"></ion-icon></span>
+                <span class="title">Settings</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                <span class="icon"><ion-icon name="finger-print-outline"></ion-icon></span>
+                <span class="title">Password</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                <span class="icon"><ion-icon name="log-out-outline"></ion-icon></span>
+                <span class="title">Sign Out</span>
+                </a>
+            </li>
+        </ul>
+
+
+    </div>
+
+
+    
+
+
+
+
+
+
+<script>
+    const navigation = document.querySelector('.navigation');
+    document.querySelector('.toggle').ondblclick = function() {
+        this.classList.toggle('active');
+        navigation.classList.toggle('active')
+    }
+</script>
+
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+<script>
+$( function() {
+$(".navigation").draggable();
+} );
+</script>
+
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>    
+
+</body>
+</html>
