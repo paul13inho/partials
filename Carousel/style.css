@@ -1,0 +1,168 @@
+
+
+/*CARROSSEL*/
+
+.container-slider
+{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #23e3c9;
+}
+
+
+/*APAGAR E BOTAR EM TAILWIND*/
+.div1
+{
+    background-color: green;
+}
+
+.div2
+{
+    background-color: blueviolet;
+}
+
+.div3
+{
+    background-color: darkred;
+}
+
+.div4
+{
+    background-color: yellow;
+}
+/*FIM APAGAR E BOTAR EM TAILWIND*/
+
+.slider
+{
+    width: 800px;
+    height: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.slides
+{
+    width: 500%;
+    height: 500px;
+    display: flex;
+}
+
+.slides input
+{
+    display: none;
+}
+
+.slide{
+    width: 20%;
+    transition: 2s;
+}
+
+/*CSS SLIDE MANUAL NAVIGATION*/
+.navigation-manual
+{
+    position: absolute;
+    width: 800px;
+    margin-top: 450px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn
+{
+    border: 2px solid #40d3dc;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child)
+{
+    margin-right: 40px;
+}
+
+.manual-btn:hover
+{
+    background: #40d3dc;
+}
+
+#radio1:checked ~ .first
+{
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first
+{
+    margin-left: -20%;
+}
+
+#radio3:checked ~ .first
+{
+    margin-left: -40%;
+}
+
+#radio4:checked ~ .first
+{
+    margin-left: -60%;
+}
+/*FIM CSS SLIDE MANUAL NAVIGATION*/
+
+
+/*CSS SLIDE AUTO NAVIGATION*/
+.navigation-auto
+{
+    position: absolute;
+    width: 800px;
+    margin-top: 450px;
+    display: flex;
+    justify-content: center;
+}
+
+.navigation-auto div
+{
+    border: 2px solid #40d3dc;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.navigation-auto div:not(:last-child)
+{
+    margin-right: 40px;
+}
+
+.radio1:checked ~ .navigation-auto .auto-btn1
+{
+    background: #40d3dc
+}
+
+.radio2:checked ~ .navigation-auto .auto-btn2
+{
+    background: #40d3dc
+}
+
+.radio3:checked ~ .navigation-auto .auto-btn3
+{
+    background: #40d3dc
+}
+
+.radio4:checked ~ .navigation-auto .auto-btn4
+{
+    background: #40d3dc
+}
+
+
+
+/*FIM CSS SLIDE AUTO NAVIGATION*/
+
+
+
+
+
+/*FIM CARROSSEL*/
+
