@@ -91,7 +91,7 @@
 .gender label span
 {
   color: #999;
-  transition: 0,5s;
+  transition: 0.5s;
 }
 
 .gender label span::before
