@@ -60,8 +60,6 @@
     		const btn = document.getElementById("otherAmount");
     		if (x == 6){
     			btn.removeAttribute("disabled");
-    		} else{
-    			btn.addAttribute("disabled");
     		}
     	}
     </script>
@@ -71,6 +69,22 @@
 
     <script>
         $('#otherAmount').mask("#,##0.00", {reverse: true});
+    </script>
+
+    <script type="text/javascript">
+    var radios = document.querySelectorAll("input[type=radio]");
+	for (var i = 0, iLen = radios.length; i < iLen; i++) {
+  		radios[i].onclick = function() {
+    	showResult(this.name);
+  		}
+	}
+
+	function showResult(name) {
+  	var x = document.getElementsByName(name);
+  		for (var i = 0; i < x.length; i++) {
+    		x[i].disabled = true;
+  		}
+	}
     </script>
 	
 
