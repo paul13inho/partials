@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Satisfy, cursive;
+}
+
+section i
+{
+	position: absolute;
+	background: #ff2a2a;
+	border-radius: 100%;
+	animation: animate linear infinite;
+}
+
+section i:nth-child(even)
+{
+	background: transparent;
+	border: 1px solid #ff2a2a;
+}
+
+@keyframes animate
+{
+	0%
+	{
+		transform: translateY(0);
+		opacity: 0;
+	}
+	10%
+	{
+		opacity: 1;
+	}
+	90%
+	{
+		opacity: 1;
+	}
+	100%
+	{
+		transform: translateY(-5000%);
+		opacity: 0;
+	}
+}
+
